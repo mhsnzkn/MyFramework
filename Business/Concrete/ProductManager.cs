@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -36,18 +37,18 @@ namespace Business.Concrete
         public IResult Add(Product product)
         {
             productDal.Add(product);
-            return new SuccessResult("Urun basariyla eklendi");
+            return new SuccessResult(Messages.ProductAdded);
         }
 
         public IResult Delete(Product product)
         {
             productDal.Delete(product);
-            return new SuccessResult("Urun basariyla silindi");
+            return new SuccessResult(Messages.ProductDeleted);
         }
         public IResult Update(Product product)
         {
             productDal.Update(product);
-            return new SuccessResult("Urun basariyla Guncellendi");
+            return new SuccessResult(Messages.ProductUpdated);
         }
     }
 }
