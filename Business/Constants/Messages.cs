@@ -9,5 +9,9 @@ namespace Business.Constants
         public static string ProductAdded = "Urun basariyla eklendi";
         public static string ProductUpdated = "Urun basariyla guncellendi";
         public static string ProductDeleted = "Urun basariyla silindi";
+
+        public static string CategoryAdded = "Kategori basariyla eklendi";
+        public static string CategoryUpdated = "Kategori basariyla guncellendi";
+        public static string CategoryDeleted = "Kategori basariyla silindi";
     }
 }
