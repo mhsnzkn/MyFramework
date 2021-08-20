@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,5 +14,6 @@ namespace Business.Constants
         public static string CategoryAdded = "Kategori basariyla eklendi";
         public static string CategoryUpdated = "Kategori basariyla guncellendi";
         public static string CategoryDeleted = "Kategori basariyla silindi";
+        public static string UserNotFound = "Kullanici bulunamadi";
     }
 }
