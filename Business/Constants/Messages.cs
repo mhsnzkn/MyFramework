@@ -14,6 +14,10 @@ namespace Business.Constants
         public static string CategoryAdded = "Kategori basariyla eklendi";
         public static string CategoryUpdated = "Kategori basariyla guncellendi";
         public static string CategoryDeleted = "Kategori basariyla silindi";
-        public static string UserNotFound = "Kullanici bulunamadi";
+
+        public static string UserNotVerified = "Kullanici veya Sifre yanlis";
+        public static string UserLoginSuccessful = "Kullanici girisi basarili";
+        public static string UserAlreadyExist = "Kullanici zaten mevcut";
+        public static string UserRegistered = "Kullanici kaydi basarili";
     }
 }
