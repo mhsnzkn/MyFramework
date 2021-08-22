@@ -7,4 +7,9 @@ The following concepts are covered in this project:
 * Clean architecure
 * Repository Pattern implementation
 * JWT configuration
-* Role based authorization 
+* Role based authorization
+
+## Technologies
+* .Net 5
+* Autofact - Inversion of Control
+* Fluent Validation - Validation of Entities
