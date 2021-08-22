@@ -38,7 +38,7 @@ namespace Business.Concrete
                 return new ErrorDataResult<User>(Messages.UserNotVerified);
             }
 
-            if (!HashingHelper.VerifyPassword(userForLoginDto.Password, userToCheck.PasswordHash))
+            if (!HashingHelper.VerifyPassword(userForLoginDto.Password, userToCheck.PasswordHash, userToCheck.PasswordSalt))
                 return new ErrorDataResult<User>(Messages.UserNotVerified);
 
             return new SuccessDataResult<User>(userToCheck, Messages.UserLoginSuccessful);
