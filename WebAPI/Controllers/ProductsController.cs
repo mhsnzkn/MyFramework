@@ -62,7 +62,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("update")]
+        [HttpPut("update")]
         public IActionResult Update(Product product)
         {
             var result = productService.Update(product);
@@ -71,10 +71,20 @@ namespace WebAPI.Controllers
 
             return BadRequest(result.Message);
         }
-        [HttpGet("delete")]
+        [HttpDelete("delete")]
         public IActionResult Delete(Product product)
         {
             var result = productService.Delete(product);
+            if (result.Success)
+                return Ok(result.Message);
+
+            return BadRequest(result.Message);
+        }
+
+        [HttpPost("transaction")]
+        public IActionResult Transaction(Product product)
+        {
+            var result = productService.Transaction(product);
             if (result.Success)
                 return Ok(result.Message);
 
