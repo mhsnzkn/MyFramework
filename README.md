@@ -3,13 +3,15 @@ This repo is the starting template framework for .Net 5 projects(currently). Int
 ## Approaches
 The following concepts are covered in this project:
 * N-Layer Architecture
-* Business, DataAccess, API configurations
+  * Business, DataAccess, API configurations
+* Aspect Oriented Programming
 * Clean architecure
 * Repository Pattern implementation
-* JWT configuration
+* JWT based authorization/authentication
 * Role based authorization
 
 ## Technologies
-* .Net 5
-* Autofact - Inversion of Control
+* .Net 5 (Web Api)
+* Autofac - Inversion of Control
 * Fluent Validation - Validation of Entities
+* Castle Dynamic Proxy - Interceptors
