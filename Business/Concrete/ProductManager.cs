@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -34,6 +36,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(productDal.GetList(a => a.CategoryId == categoryId).ToList());
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             productDal.Add(product);
