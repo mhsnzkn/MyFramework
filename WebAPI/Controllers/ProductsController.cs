@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.BusinessAspects.Autofac;
 using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -45,6 +46,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
+        [PerformanceAspect(5)]
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
