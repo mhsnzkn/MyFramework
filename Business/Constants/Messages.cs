@@ -7,17 +7,19 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        public static string ProductAdded = "Urun basariyla eklendi";
-        public static string ProductUpdated = "Urun basariyla guncellendi";
-        public static string ProductDeleted = "Urun basariyla silindi";
+        public const string ProductAdded = "Urun basariyla eklendi";
+        public const string ProductUpdated = "Urun basariyla guncellendi";
+        public const string ProductDeleted = "Urun basariyla silindi";
 
-        public static string CategoryAdded = "Kategori basariyla eklendi";
-        public static string CategoryUpdated = "Kategori basariyla guncellendi";
-        public static string CategoryDeleted = "Kategori basariyla silindi";
+        public const string CategoryAdded = "Kategori basariyla eklendi";
+        public const string CategoryUpdated = "Kategori basariyla guncellendi";
+        public const string CategoryDeleted = "Kategori basariyla silindi";
 
-        public static string UserNotVerified = "Kullanici veya Sifre yanlis";
-        public static string UserLoginSuccessful = "Kullanici girisi basarili";
-        public static string UserAlreadyExist = "Kullanici zaten mevcut";
-        public static string UserRegistered = "Kullanici kaydi basarili";
+        public const string UserNotVerified = "Kullanici veya Sifre yanlis";
+        public const string UserLoginSuccessful = "Kullanici girisi basarili";
+        public const string UserAlreadyExist = "Kullanici zaten mevcut";
+        public const string UserRegistered = "Kullanici kaydi basarili";
+
+        public const string AuthorizationDenied = "Yetkiniz yok";
     }
 }

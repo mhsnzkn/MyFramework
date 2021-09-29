@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -22,6 +24,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
+        [CacheAspect(30)]
         public IActionResult GetList()
         {
             var result = productService.GetList();
@@ -31,6 +34,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
+        [SecuredOperations("Product.List,Admin")]
         [HttpGet("getlistbycategory")]
         public IActionResult GetListByCategory(int categoryId)
         {
@@ -53,6 +57,7 @@ namespace WebAPI.Controllers
 
 
         [HttpPost("add")]
+        [Authorize(Roles ="Product.Add")]
         public IActionResult Add(Product product)
         {
             var result = productService.Add(product);
