@@ -5,10 +5,13 @@ The following concepts are covered in this project:
 * N-Layer Architecture
   * Business, DataAccess, API configurations
 * Aspect Oriented Programming
-* Clean architecure
+* Cross Cutting Concern
 * Repository Pattern implementation
 * JWT based authorization/authentication
 * Role based authorization
+* Backend Exception Handling
+* Frontend Exception Handling
+* Clean Code
 
 ## Technologies
 * .Net 5 (Web Api)
