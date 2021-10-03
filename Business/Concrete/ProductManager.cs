@@ -3,6 +3,7 @@ using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Exception;
 using Core.Aspects.Autofac.Logging;
 using Core.Aspects.Autofac.Performance;
 using Core.Aspects.Autofac.Transaction;
@@ -31,6 +32,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Product>(productDal.Get(a => a.ProductId == id));
         }
+        // Cache Aspect
         // 1 min of cache activated here
         [CacheAspect(duration:1)]
         public IDataResult<List<Product>> GetList()

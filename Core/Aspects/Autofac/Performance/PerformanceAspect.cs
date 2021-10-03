@@ -28,7 +28,7 @@ namespace Core.Aspects.Autofac.Performance
         {
             if (stopwatch.Elapsed.TotalSeconds > interval)
             {
-                Debug.WriteLine($"Performance : {invocation.Method.DeclaringType.FullName}.{invocation.Method.Name}-->{stopwatch.Elapsed.TotalSeconds}")
+                Debug.WriteLine($"Performance : {invocation.Method.DeclaringType.FullName}.{invocation.Method.Name}-->{stopwatch.Elapsed.TotalSeconds}");
             }
             stopwatch.Reset();
         }
