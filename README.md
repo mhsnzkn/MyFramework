@@ -1,5 +1,5 @@
-# Starting Template Framework
-This repo is the starting template framework for .Net 5 projects(currently). Interfaces and some concrete applications already made for a quick start for the project. N-Layer architecture has been used for reusability, testing and seperation of concerns purposes. <br>
+# Reference Template Framework
+This repo is the reference template framework for .Net 5 projects(currently). Interfaces and some concrete applications already made for a quick start and to reference for the project. N-Layer architecture has been used for reusability, testing and seperation of concerns purposes. <br>
 ## Approaches
 The following concepts are covered in this project:
 * N-Layer Architecture
