@@ -21,5 +21,7 @@ namespace Business.Constants
         public const string UserRegistered = "Kullanici kaydi basarili";
 
         public const string AuthorizationDenied = "Yetkiniz yok";
+
+        public const string ProductAlreadyExist = "Urun zaten bulunuyor";
     }
 }
